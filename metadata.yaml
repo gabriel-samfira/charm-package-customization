@@ -1,0 +1,14 @@
+name: package-customization
+summary: Install and hold specific packages
+description: |
+  This charm allows the installation of aditional packages. The packages can be
+  from the official repositories or from a specific PPA. Optionally the list of
+  packages that get installed can be held.
+  If a PPA is used, a higher priority is set on the PPA.
+series:
+  - jammy
+subordinate: true
+requires:
+  juju-info:
+    interface: juju-info
+    scope: container

@@ -1,0 +1,15 @@
+options:
+  ppa:
+    default: ""
+    description: PPA from which to install packages.
+    type: string
+  packages:
+    default: ""
+    description: |
+      Comma-separated list of packages to install.
+    type: string
+  hold-packages:
+    default: false
+    description: |
+      Whether to hold packages to prevent them from being upgraded.
+    type: boolean
